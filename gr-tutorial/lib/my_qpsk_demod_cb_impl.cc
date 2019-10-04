@@ -73,7 +73,7 @@ namespace gr {
       //Perform ML decoding 
       for(int i = 0; i < noutput_items; i++)
       {
-	          out[i] = get_minimum_distance(in[i]);
+	          out[i] = get_minimum_distances(in[i]);
       }
       // Do <+signal processing+>
       // Tell runtime system how many input items we consumed on
@@ -85,7 +85,7 @@ namespace gr {
     }
 
     unsigned char
-    my_qpsk_demod_cb::get_minimum_distance(const gr_complex &sample)
+    my_qpsk_demod_cb_impl::get_minimum_distances (const gr_complex &sample)
     {
       if (d_gray_code) {
         unsigned char bit0 = 0;

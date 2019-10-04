@@ -44,7 +44,7 @@ namespace gr {
            gr_vector_const_void_star &input_items,
            gr_vector_void_star &output_items);
       
-      int get_minimum_distances(const gr_complex &sample);
+      unsigned char get_minimum_distances(const gr_complex &sample);
     };
 
   } // namespace tutorial
