@@ -3,7 +3,7 @@
 # ~/.gnuradio/config.conf
 
 [DEFAULT]
-verbose = False
+verbose = True
 
 # The maximum number of messages a block will store up before pruning
 # the queue by popping messages from the front.
@@ -29,11 +29,11 @@ debug_file = stderr
 
 
 [PerfCounters]
-on = False
-export = False
+on = True
+export = True
 clock = thread
 #clock = monotonic
 
 [ControlPort]
-on = False
-edges_list = False
+on = True
+edges_list = True
